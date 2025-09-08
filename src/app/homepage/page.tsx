@@ -28,12 +28,15 @@ export default function Homepage(){
     return(
 
   <div className="bg-[#101c30] min-h-screen w-full flex flex-col items-center">
+    <div className="container w-full max-w-2xl h-15 items-center bg-blue-900 my-5 border-black border-5 flex text-left align-middle text-2xl px-4">𝘏𝘦𝘭𝘭𝘰, </div>
     {/* Black background container */}
-    <div className="container w-300 bg-black p-8 flex justify-evenly mt-50 mx-10 gap-10">
+
+    <div className="container items-end h-100 w-300 bg-black p-8 flex justify-evenly mt-50 mx-10 gap-10">
+      <div className="w-200 h-30 bg-blue-800"></div>
       {/* Blue boxes */}
-      <div className="w-64 h-32 bg-blue-900"></div>
-      <div className="w-64 h-32 bg-blue-900"></div>
-      <div className="w-64 h-32 bg-blue-900"></div>
+      <button className="w-42 h-16 bg-blue-900 hover:bg-blue-700 hover:cursor-pointer">Transfer</button>
+      <button className="w-42 h-16 bg-blue-900 hover:bg-blue-700 hover:cursor-pointer">Add Money</button>
+      <button className="w-42 h-16 bg-blue-900 hover:bg-blue-700 hover:cursor-pointer">Withdraw</button>
     </div>
   </div>
 );
